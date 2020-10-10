@@ -1,0 +1,54 @@
+//billing warnet
+//semoga bisa ya tuhan ngantuk
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$//
+//Nama : Durotun Nafisah Amalia Ahli
+//Kelas : D4 MI 2020 A
+//NIM : 20051397041
+//$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$//
+
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main(void)
+{
+	char nama[14];
+	int totW;
+	int jam, totJ;
+	int menit, totM;
+	int detik, totD;
+	int w;
+	int pembayaran;
+	
+	cout<<""<<endl<<endl<<endl;
+	cout<<"	$$$$$$$$$ Welcome My Money $$$$$$$$$"<<endl<<endl;
+	cout<<"		BILLING WARNET"<<endl<<endl<<endl<<endl;
+	
+	cout<<"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n"<<endl;
+	
+	cout<<"		Tarif  Warnet Rp.5000 per jam \n"<<endl;
+	cout<<"	Masukkan Nama Kamu :";
+	cin>>nama;
+	cout<<""<<endl;
+	cout<<"$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n"<<endl<<endl;
+	
+	cout<<"Jam Mulai	: J1"<<endl<<endl;
+	cout<<"jam Selesai	: J2"<<endl<<endl;
+	
+	cout<<"Berapa Lama Kamu Bermain 	: 1 jam"<<endl<<endl;
+
+	cout<<"Total Pembayaran 		: Rp. 5000 "<<endl<<endl;
+	cin>>pembayaran;
+	
+	totJ=jam*1;
+	totM=menit*60;
+	totD=detik*3600;
+	
+	
+	cout<<"		-_- Bayar Ya di Kasir, Pake Uang Pas -_-"<<endl<<endl<<endl;
+
+	totW=totJ;
+	
+	cout<<"			$$$$$$$$$ Bye Bye $$$$$$$$$"<<endl<<endl;
+}
