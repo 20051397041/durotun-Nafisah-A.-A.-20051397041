@@ -1,0 +1,79 @@
+//nama : Durotun Nafisah A. A.
+//nim : 20051397041
+//kelas: 2020A
+//semoga bisa ya allah
+//saya masukin golongan pake huruf gamau keluar terus pak jadi saya nyerah akhirnya saya masukin Golongannya pake angka
+//MASUKKAN GOLONGAN DENGAN ANGKA BUKAN HURUF 
+//A=1, B=2, C=3, D=4 <===== UNTUK GOLONGAN
+
+#include <iostream>
+#include <conio.h>
+#include <string>
+using namespace std;
+int main()
+{
+   string nama[10];
+   int jum, gol[10],jkerja[10],jlembur[10];
+   int gapok[10],glembur[10],gkerja[10],gajibersih[10];
+	
+   cout<<".................................................................."<<endl<<endl;
+   cout<<"		 Gaji Karyawan PT DNA AHLI per Minggu			"<<endl<<endl;
+   cout<<".................................................................."<<endl<<endl;
+   
+   cout<<"Masukan Jumlah Karyawan  : ";
+   cin>>jum;
+   cout<<endl;
+	
+   for (int i=1;i<=jum;i++){
+        cout<<"KARYAWAN KE-"<<i<<endl;
+	cout<<"Masukan Nama              : ";
+	cin>>nama[i];
+	cout<<"Masukan Golongan          : ";
+	cin>>gol[i];
+	cout<<"Masukan Jumlah Jam Kerja  : ";
+	cin>>jkerja[i];
+	
+	switch (gol[i]){
+		case 1 : 
+			gapok[i]= 5000;
+			break;
+		case 2 :
+			gapok[i]=7000;
+			break;
+		case 3 :
+			gapok[i]=8000;
+			break;
+		case 4 :
+			gapok[i]=10000;
+			break;
+		default :
+			gapok[i]=0;	
+	}
+	
+	if (jkerja[i]>48){
+	    jlembur[i]=jkerja[i]-48;	
+	}else{
+	     jlembur[i]=0;
+	}
+	
+	gkerja[i]=jkerja[i]*gapok[i];
+	glembur[i]=jlembur[i]*4000;
+	gajibersih[i]=(gkerja[i]+glembur[i]);
+	cout<<endl;
+	}
+	
+	cout<<"Perhitungan Gaji Karyawan per Minggu"<<endl;
+		cout<<endl;
+	for (int i=1;i<=jum;i++){
+		
+		cout<<"     KARYAWAN KE-"<<i<<endl;
+		cout<<"Nama                 : "<<nama[i]<<endl;
+		cout<<"Gaji Pokok           : "<<gapok[i]<<endl;		
+		cout<<"Gaji Lembur          : "<<glembur[i]<<endl;
+		cout<<"Gaji Diterima        : "<<gajibersih[i]<<endl;
+		cout<<endl<<endl;	
+		cout<<"DAPATKAN UANG ANDA DAN BERSENANG SENANGLAH"<<endl;
+	}	
+
+getch();
+}
