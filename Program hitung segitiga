@@ -1,0 +1,50 @@
+//nama : Durotu Nafisah A. A.
+//nim : 20051397041
+//kelas : 2020 A
+//program untuk menghitung segitiga siku-siku
+
+#include<iostream>
+#include<conio.h>
+#include<math.h>
+using namespace std;
+int main()
+{
+  int pilihan,luas,alas,tinggi,sisi1,sisi2,sisi3,keliling, miring, tegak, tidur;
+  cout<<".................................................\n\n";
+  cout<<"Program Luas dan Keliling Segitiga\n\n";
+  cout<<".................................................\n\n";
+  cout<<"[1] Panjang Sisi Miring\n";
+  cout<<"[2] Luas Segitiga\n";
+  cout<<"[3] Keliling Segitiga\n";
+  cout<<"[4] Close Program\n\n";
+  cout<<"Masukkan Pilihan Anda\n";
+  cin>>pilihan;
+  switch(pilihan)
+  {
+    case 1 :cout<<"\nMasukkan Sisi Tegak  = ";
+    		cin>>tegak;
+    		cout<<"\nMasukkan Sisi tidur  = ";
+    		cin>>tidur;
+    		miring = sqrt (tegak*tegak + tidur*tidur);
+    		cout<<"\nPanjang Sisi Miring = "<<miring;
+    		break;
+	case 2 :cout<<"\nMasukkan Alas   = ";
+            cin>>alas;
+            cout<<"\nMasukkan Tinggi = ";
+            cin>>tinggi;
+            luas=alas*tinggi/2;
+            cout<<"\nLuas segitiga = "<<luas;
+            break;
+    case 3 :cout<<"\nMasukkan panjang sisi ke-1 = ";
+            cin>>sisi1;
+            cout<<"\nMasukkan panjang sisi ke-2 = ";
+            cin>>sisi2;
+            cout<<"\nMasukkan panjang sisi ke-3 = ";
+            cin>>sisi3;
+            keliling=sisi1+sisi2+sisi3;
+            cout<<"\nKeliling Segitiga = "<<keliling;
+            break;
+   
+  }
+  getch();
+}
